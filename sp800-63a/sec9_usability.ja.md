@@ -58,8 +58,6 @@ Enrollment および Identity Proofing プロセスでは, ユーザーは CSP �
 
 <!-- * To avoid user frustration, streamline the process required for enrollment to make each step as clear and easy as possible. -->
 
-* どこでどのように技術的支援を受けることができるかを明確に伝える. 例えば, お
-
 * どこでどのようにして技術的な支援を得ることができるかを明確に伝える. 例えば, ユーザーにオンラインセルフサービス機能へのリンクや, ヘルプデスクサポートのためのチャットや電話番号を提供する. 理想的には, 外部からの介入なしにユーザーが自身で Enrollment 準備の疑問を解決できるよう, 十分な情報を提供するべきである.
 
 <!-- * Clearly communicate how and where to acquire technical assistance. For example, provide helpful information such as a link to online self-service feature, chat sessions, and a phone number for help desk support. Ideally, sufficient information should be provided to enable users to answer their own enrollment preparation questions without outside intervention. -->
@@ -171,7 +169,7 @@ Enrollment Session に特化したユーザビリティー上の考慮事項と�
 * Enrollment Session 中には, CSP がどのデータを記録するかなど, Identity Proofing 時にユーザーに明示的に通知を行うべきいくつかの要件が課されることになる (通知要件の詳細については [Section 4.2.](#genProofReqs) と [Section 8.](#sec8) を参照). 4.2 の要件 (5) に従って, CSP がユーザーに追加の Attribute に関する同意を求めたり, Attribute を Identity Proofing, Authentication, Authorization, Attribute Assertion 以外の目的で利用することに同意を求めたりすると, そういった行為がユーザーの予期しないことであったり不快感を感じさせるかもしれない. ユーザーがそれらに対してメリットを理解できず, 余計なリスクを感じる場合, ユーザーは同意してプロセスを進めることを嫌がったりためらったりするかもしれない. 追加の要件に関して, ユーザーに明確な通知を行うこと.
 * ユーザビリティー視点では KBV は非常に問題が多いため, KBV の利用は避けること. 人間の記憶力には限界があるため, KBV はエラーを引き起こしたりユーザーにフラストレーションを抱かせがちである. KBV を利用する場合は, 以下のユーザビリティー上の考慮事項に従うこと.
   * ユーザーが正しく回答できるよう, KBV の質問には関連性とコンテキストを持たせるべきである.
-  * KBV の質問は明確な言い回しにすること. あいまいな表現はユーザーのエラーにつながる可能性がある. 例えば, ユーザーに社会保障残高について質問する場合, 社会保障講座の変動を考慮し期間を明確に指定すること.
+  * KBV の質問は明確な言い回しにすること. あいまいな表現はユーザーのエラーにつながる可能性がある. 例えば, ユーザーに社会保障残高について質問する場合, 社会保障口座の変動を考慮し期間を明確に指定すること.
   * KBV の質問をするまえに, ユーザーに以下を知らせること.
     * 許容される試行回数と残りの試行回数.
     * KBV の質問が, 次の試行において変化するであろうこと.

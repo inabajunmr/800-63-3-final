@@ -68,7 +68,7 @@ Identity Validation のゴールは, Applicant からもっとも適切な Ident
 
 #### <a name="evidence_validation"></a> 5.2.2 Validating Identity Evidence
 
-ひとたb Identity Evidence を取得すると, CSP はその正確さ, Authenticity, Integrity, および関連情報を Authoritative Source に照会し, 提示されたエビデンスに対して以下の項目を判断する.
+ひとたび Identity Evidence を取得すると, CSP はその正確さ, Authenticity, Integrity, および関連情報を Authoritative Source に照会し, 提示されたエビデンスに対して以下の項目を判断する.
 
 <!-- Once the CSP obtains the identity evidence, the accuracy, authenticity, and integrity of the evidence and related information is checked against authoritative sources in order to determine that the presented evidence:   -->
 

@@ -108,17 +108,17 @@ IAL2 ないしは IAL3 で Identity Proofing を行う CSP には, 以下の要�
     <li><a name="4.2-r3"></a>CSP は, 収集時に Applicaint に明示的な通知を行い, Identity Proofing に必要な Attribute の収集・記録管理の目的を知らせなければならない (SHALL). これには, Identity Proofing プロセスを完了するためにどの Attribute が任意でありどの Attribute が必須であるかや, Attribute を提供しない場合の影響といった情報を含む.</li>
     <li><a name="4.2-r4"></a>CSP は, Identity Proofing プロセスにおいて収集・管理することとなった Attribute を, CSP が明確な通知を行い Subscriber からの同意を得た場合を除き, Identity Proofing, Authentication, Attribute Assertion, 法律や法的プロセスに従う以外の目的で利用してはならない (SHALL NOT). CSP はこういった追加の目的をサービス提供条件としてはならない (SHALL NOT).</li>
     <li><a name="4.2-r5"></a>CSP は, Identity Proofing を起因とする Applicant からの苦情や問題の是正のためのメカニズムを提供しなければならない (SHALL). また CSP は, そのメカニズムによって苦情や問題の解決が有効になされているか, 評価しなければならない (SHALL).</li>
-    <li><a name="4.2-r6"></a>Identity Proofing と Enrollmet プロセスは, 適用可能な書面によるポリシー, または Identity を検証するための特定の手続きを規定する <i>practice statement</i> に従って行うこととする (SHALL). <i>practice statement</i> は, CSP がどのように Applicant の登録失敗につながるような Proofing エラーを取り扱うかを詳説する制御情報を含むこと (SHALL). これには例えば, 許容されるリトライ回数, 代替の Proofing 方法 (e.g., Remote が失敗した場合は対面), 異常検知時の不正対策などが含まれる.</li>
-    <li><a name="4.2-r7"></a>CSP は, 監査ログを含む Applicant の Identity を検証する際のすべての手続きの記録を管理するものとし (SHALL), Proofing プロセスにおいて提示された Identity Evidence のタイプを記録するものとする (SHALL). CSL は, プライバシーおよびセキュリティーに関する Risk Assessment を含む Risk Management プロセスを実施し, 以下の項目を定めること.</li>
+    <li><a name="4.2-r6"></a>Identity Proofing と Enrollment プロセスは, 適用可能な書面によるポリシー, または Identity を検証するための特定の手続きを規定する <i>practice statement</i> に従って行うこととする (SHALL). <i>practice statement</i> は, CSP がどのように Applicant の登録失敗につながるような Proofing エラーを取り扱うかを詳説する制御情報を含むこと (SHALL). これには例えば, 許容されるリトライ回数, 代替の Proofing 方法 (e.g., Remote が失敗した場合は対面), 異常検知時の不正対策などが含まれる.</li>
+    <li><a name="4.2-r7"></a>CSP は, 監査ログを含む Applicant の Identity を検証する際のすべての手続きの記録を管理するものとし (SHALL), Proofing プロセスにおいて提示された Identity Evidence のタイプを記録するものとする (SHALL). CSP は, プライバシーおよびセキュリティーに関する Risk Assessment を含む Risk Management プロセスを実施し, 以下の項目を定めること.</li>
       <ol type="a" start="a">
         <li>ここで指定された必須要件を超えて, Applicant の Identity を検証するために必要なステップ.</li>
         <li>Biometrics, 画像, スキャン, その他 Identity Evidence のコピーを含む PII. CSP はこれらを Identity Proofing の記録として管理することになる. (Note: 特別な連邦政府要件が課せられることもある)</li>
         <li>これらの記録の保持スケジュール. (Note: CSP には, 適用可能な National Archives and Records Administration (NARA) 記録保持スケジュールを含む, 適用可能な法律, 規則, ポリシーに従って, 特定の保持ポリシーが課せられることもある)</li>
       </ol>
-    <li><a name="4.2-r8"></a>Enrollmet プロセスにおいて収集されたすべての PII は, Confidentiality (機密性), Integrity (完全性), 情報源の帰属を保証するよう保護すること (SHALL).</li>
+    <li><a name="4.2-r8"></a>Enrollment プロセスにおいて収集されたすべての PII は, Confidentiality (機密性), Integrity (完全性), 情報源の帰属を保証するよう保護すること (SHALL).</li>
     <li><a name="4.2-r9"></a>第三者が関与する Transaction を含み, Proofing Transaction 全体を Authenticated Protected Channel 上で実行すること (SHALL).</li>
     <li><a name="4.2-r10"></a>CSP は, 追加の対策がここで規定される必須要件に代わるものでない限り, 不正防止策 (e.g., ジオロケーションの検査, Applicant のデバイス特性の調査, 行動特性の評価, Death Master File <a href="sp800-63a.html#dmf">[DMF]</a> などのバイタル統計レポジトリーのチェック) を用いて Identity Proofing の信頼性を向上させるべきである (SHOULD). CSP が不正防止策を行う場合, CSP はこれらの防止策に関してプライバシー Risk Assessment を行うこと (SHALL). こういったアセスメントには, プライバシーリスク軽減策 (e.g., リスクの受容や転嫁, 制限付き保持, 使用制限, 通知), その他の技術的対策 (e.g., 暗号化), 上記 4.2(7) に記載された対策などが含まれる.</li>
-    <li><a name="4.2-r11"></a>CSP が Identity Proogin および Enrollment プロセスを終える場合, CSP は PII は PII を含むセンシティブデータの完全な廃棄または破棄, または保持期間中の Unauthorized な Access からの保護を行う責任を持つ (SHALL).</li>
+    <li><a name="4.2-r11"></a>CSP が Identity Proofing および Enrollment プロセスを終える場合, CSP は PII を含むセンシティブデータの完全な廃棄または破棄, または保持期間中の Unauthorized な Access からの保護を行う責任を持つ (SHALL).</li>
     <li><a name="4.2-r12"></a>CSP が政府機関か民間のプロバイダーかに関わらず, Proofing サービスを提供したり利用するには以下の要件が適用される.</li>
       <ol type="a" start="a">
         <li>機関は, Senior Agency Official for Privacy (SAOP) と協議し, Identity Proofing を実施するための PII 収集において Privacy Act 要件が適用されるかどうか判断するための分析を行うこと (SHALL).</li>
@@ -244,10 +244,7 @@ CSP は Identity Evidence を以下のように検証すること.
 2. Knowledge-based verification (KBV) SHALL NOT be used for in-person (physical or supervised remote) identity verification.
 -->
 
-Identity Evidence の検証についての詳細は [Section 5.2.2 Validating Identity Evidence](#evidence_validation) を参照のこと.
-
-<!-- NOTE: 多分原文が間違ってコピペしてる. -->
-<!-- See [Section 5.3 Identity Verification](#verify) for more information on acceptable identity evidence. -->
+Identity Evidence の検証についての詳細は [Section 5.3 Identity Verification](#verify) を参照のこと.
 
 #### 4.4.1.5 Presence Requirements
 
